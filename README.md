@@ -13,7 +13,7 @@ If you prefer using `bower` just install it `bower install css-sass-debugger`.
 For this example I've used these options:
 ```scss
 $outline: true;
-$tags: (h1, h2, h3, h4, a);
+$tags: (aection, article, p);
 $attrs: (style);
 ```
 
