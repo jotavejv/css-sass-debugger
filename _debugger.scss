@@ -1,6 +1,4 @@
 // debuger sass
-
-$legend: true; //change to legend.
 $outline: true; //change to outline.
 
 $tags: ();
@@ -17,11 +15,7 @@ $classes: ();
         }
 
         &:after{
-          @if $legend == true {
-            content: ' ' + '[' + quote(#{$tag}) + ']';
-          } @else {
-            content: '';
-          }
+          content: ' ' + '[' + quote(#{$tag}) + ']';
           font-size: 10px;
           color: tomato;
           font-weight: bold;
@@ -41,11 +35,7 @@ $classes: ();
           outline: none;
         }
         &:after{
-           @if $legend == true {
-            content: ' ' + '[' + quote(#{$attr}) + ']';
-          } @else {
-            content: '';
-          }
+          content: ' ' + '[' + quote(#{$attr}) + ']';
           font-size: 10px;
           color: tomato;
           font-weight: bold;
@@ -63,11 +53,7 @@ $classes: ();
           outline: none;
         }
         &:after{
-           @if $legend == true {
-            content: ' ' + '[' + quote(#{$class}) + ']';
-          } @else {
-            content: '';
-          }
+          content: ' ' + '[' + quote(#{$class}) + ']';
           font-size: 10px;
           color: tomato;
           font-weight: bold;
@@ -78,7 +64,7 @@ $classes: ();
       }
     }
 
-    body:before{
+    &:before{
       content:'DEBUG Active';
       position: fixed;
       bottom: 0;
@@ -89,4 +75,8 @@ $classes: ();
       color: tomato;
     }
 
+}
+
+body{
+  @include debugger();
 }
