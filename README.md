@@ -57,7 +57,7 @@ By default the `$outline` is true, see below the difference between be true or f
 
 If you want to change these options you can do it inside of `_debugger.scss` and modify them as you need.
 
-Just it! Be creative and debug your project in the best way.
+Just this! Be creative and debug your project in the best way.
 
 ## Todo
 - Bookmarklet or chrome extension
