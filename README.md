@@ -51,10 +51,11 @@ $attrs: (style);
 $classes: ();
 ```
 Where `$outline` is the outside element's border, `$tags` are the DOM element's tag, `$attrs` are the element's attributes like `style`, `data-*`, `class`, `id`, `alt`, etc... and the `$classes` are the element's class.
+
 By default the `$outline` is true, see below the difference between be true or false:
 ![outline](https://github.com/jotavejv/css-sass-debugger/blob/master/outline.png "Outline option")
 
-If you want to change theses options you can do it inside of `_debugger.scss` and modify them as you need.
+If you want to change these options you can do it inside of `_debugger.scss` and modify them as you need.
 just it! Be creative and debug your project in the best way.
 
 ## Todo
