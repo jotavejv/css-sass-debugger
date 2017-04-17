@@ -1,6 +1,6 @@
 # Sass debugger
 
-This scss file provides a way to debbug your project with a visual highlight style preview based in some options that you can customize.
+This scss file provides a way to debug your project with a visual highlight style preview based in some options that you can customize.
 
 ## How to install
 Download this repo and import the file `_debugger.scss`
