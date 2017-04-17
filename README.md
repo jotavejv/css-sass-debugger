@@ -8,14 +8,14 @@ Download this repo and import the file `_debugger.scss`
 If you prefer using `bower` just install it `bower install css-sass-debugger`.
 
 ## How to use
-In your sass file import the ***_helpers.scss*** if you have downloaded it or if you are using `bower` just import from `bower_components/css-sass-helper/_helpers.scss`
+In your sass file import the ***_debugger.scss*** if you have downloaded it or if you are using `bower` just import from `bower_components/css-sass-debugger/_debugger.scss`
 
 ```scss
-@import 'helpers.scss'
+@import 'debugger.scss'
 ```
 OR
 ```scss
-@import 'bower_components/css-sass-helper/_helpers.scss'
+@import 'bower_components/css-sass-debugger/_debugger.scss'
 ```
 ## Basic examples
 
