@@ -56,7 +56,8 @@ By default the `$outline` is true, see below the difference between be true or f
 ![outline](https://github.com/jotavejv/css-sass-debugger/blob/master/outline.png "Outline option")
 
 If you want to change these options you can do it inside of `_debugger.scss` and modify them as you need.
-just it! Be creative and debug your project in the best way.
+
+Just it! Be creative and debug your project in the best way.
 
 ## Todo
 - Bookmarklet or chrome extension
