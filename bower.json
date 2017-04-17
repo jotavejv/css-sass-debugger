@@ -1,0 +1,20 @@
+{
+  "name": "css-sass-debugger",
+  "homepage": "https://github.com/jotavejv/css-sass-debugger",
+  "authors": [
+    "João Victor <contatos.jv@hotmail.com>"
+  ],
+  "description": "This scss file provides a way to debbug your project with a visual highlight style preview based in some options that you can customize.",
+  "main": "_debugger.scss",
+  "keywords": [
+    "css"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
