@@ -18,6 +18,23 @@ OR
 @import 'bower_components/css-sass-debugger/_debugger.scss'
 ```
 ## Basic examples
+![demo1](https://github.com/jotavejv/css-sass-debugger/blob/master/demo1.gif "A List Apart")
+
+For this example I've used these options:
+```scss
+$outline: true;
+$tags: (h1, h2, h3, h4, a);
+$attrs: (style);
+```
+
+![demo2](https://github.com/jotavejv/css-sass-debugger/blob/master/demo2.gif "A List Apart")
+
+For this example I've used these options:
+```scss
+$tags: (h1, h2, h3, h4, a);
+$attrs: (style);
+$classes: (jumbotron, featurette);
+```
 
 ## Todo
 - Bookmarklet or chrome extension
