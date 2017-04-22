@@ -2,6 +2,9 @@
 
 This scss file provides a way to debug your project with a visual highlight style preview based in some options that you can customize.
 
+Take a look at <a href="https://github.com/jotavejv/css-sass-debugger/tree/master/demo" target="_blank">DEMO</a>
+
+
 ## How to install
 Download this repo and import the file `_debugger.scss`
 
