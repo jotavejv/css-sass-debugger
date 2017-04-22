@@ -49,9 +49,9 @@ body{
 The options default are:
 ```scss
 $outline: true;
-$tags: ();
+$tags: (none);
 $attrs: (style);
-$classes: ();
+$classes: (none);
 ```
 Where `$outline` is the outside element's border, `$tags` are the DOM element's tag, `$attrs` are the element's attributes like `style`, `data-*`, `class`, `id`, `alt`, etc... and the `$classes` are the element's class.
 
