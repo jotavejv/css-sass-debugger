@@ -67,7 +67,7 @@ hr {
   font-size: 32px !important;
 }
 
-#work,#about, #team, 
+#work,#about, #team,
 #portfolio, #pricing, #contact {
    padding-top: 100px;
   padding-bottom: 100px;
@@ -692,7 +692,7 @@ footer p {
     #portfolio .col-md-4 {
       width: 33.333%;
     }
-  }    
+  }
 }
 
 /* ==========================================================================
@@ -709,4 +709,136 @@ media quires for mobile
   #home h3 {
     font-size: 12px;
   }
+}
+
+/*demo*/
+body section {
+  outline: none;
+}
+body section:after {
+  content: " [section]";
+  font-size: 10px;
+  color: tomato;
+  font-weight: bold;
+  position: relative;
+  top: -5px;
+  right: 0;
+}
+body h1 {
+  outline: none;
+}
+body h1:after {
+  content: " [h1]";
+  font-size: 10px;
+  color: tomato;
+  font-weight: bold;
+  position: relative;
+  top: -5px;
+  right: 0;
+}
+body h2 {
+  outline: none;
+}
+body h2:after {
+  content: " [h2]";
+  font-size: 10px;
+  color: tomato;
+  font-weight: bold;
+  position: relative;
+  top: -5px;
+  right: 0;
+}
+body h3 {
+  outline: none;
+}
+body h3:after {
+  content: " [h3]";
+  font-size: 10px;
+  color: tomato;
+  font-weight: bold;
+  position: relative;
+  top: -5px;
+  right: 0;
+}
+body h4 {
+  outline: none;
+}
+body h4:after {
+  content: " [h4]";
+  font-size: 10px;
+  color: tomato;
+  font-weight: bold;
+  position: relative;
+  top: -5px;
+  right: 0;
+}
+body strong {
+  outline: none;
+}
+body strong:after {
+  content: " [strong]";
+  font-size: 10px;
+  color: tomato;
+  font-weight: bold;
+  position: relative;
+  top: -5px;
+  right: 0;
+}
+body *[style] {
+  outline: none;
+}
+body *[style]:after {
+  content: " [style]";
+  font-size: 10px;
+  color: tomato;
+  font-weight: bold;
+  position: relative;
+  top: -5px;
+  right: 0;
+}
+body *[data-filter] {
+  outline: none;
+}
+body *[data-filter]:after {
+  content: " [data-filter]";
+  font-size: 10px;
+  color: tomato;
+  font-weight: bold;
+  position: relative;
+  top: -5px;
+  right: 0;
+}
+body .btn {
+  outline: none;
+}
+body .btn:after {
+  content: " [btn]";
+  font-size: 10px;
+  color: tomato;
+  font-weight: bold;
+  position: relative;
+  top: -5px;
+  right: 0;
+}
+body .section-title {
+  outline: none;
+}
+body .section-title:after {
+  content: " [section-title]";
+  font-size: 10px;
+  color: tomato;
+  font-weight: bold;
+  position: relative;
+  top: -5px;
+  right: 0;
+}
+body:before {
+  content: 'DEBUG Active';
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 99999;
+  font-size: 10px;
+  font-family: Verdana, 'sans-serif';
+  color: tomato;
 }
