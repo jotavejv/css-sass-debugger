@@ -1,9 +1,9 @@
 // debuger sass
 $outline: false; //change to outline.
 
-$tags: (section, h1, h2, h3, h4, strong);
-$attrs: (style, data-filter);
-$classes: (btn, section-title);
+$tags: (none);
+$attrs: (style);
+$classes: (none);
 
 @mixin debugger(){
     @each $tag in $tags {
@@ -81,5 +81,5 @@ $classes: (btn, section-title);
 }
 
 body{
-  @include debugger();
+  //@include debugger();
 }
