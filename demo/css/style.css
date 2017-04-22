@@ -833,7 +833,7 @@ body .section-title:after {
   right: 0;
 }
 body:before {
-  content: 'DEBUG Active';
+  content: "DEBUG >> " "$tags: section, h1, h2, h3, h4, strong" " | " "$attrs: style, data-filter" " | " "$classes: btn, section-title";
   position: fixed;
   bottom: 0;
   left: 0;
@@ -841,4 +841,5 @@ body:before {
   font-size: 10px;
   font-family: Verdana, 'sans-serif';
   color: tomato;
+  text-transform: uppercase;
 }
