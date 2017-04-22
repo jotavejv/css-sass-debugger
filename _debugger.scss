@@ -4,79 +4,82 @@ $outline: true; //change to outline.
 $tags: ();
 $attrs: (style);
 $classes: ();
+@mixin debugger() {
+     @each $tag in $tags{
+        #{$tag} {
+            @if $outline == true {
+                outline: solid 1px lightgray;
+            }
+            @else {
+                outline: none;
+            }
 
-@mixin debugger(){
-    @each $tag in $tags {
-      #{$tag}{
-        @if $outline == true{
-          outline: solid 1px lightgray;
-        }@else {
-          outline: none;
+            &:after {
+                content: ' ' + '[' + quote(#{$tag}) + ']';
+                font-size: 10px;
+                color: tomato;
+                font-weight: bold;
+                position: relative;
+                top: -5px;
+                right: 0;
+            }
         }
-
-        &:after{
-          content: ' ' + '[' + quote(#{$tag}) + ']';
-          font-size: 10px;
-          color: tomato;
-          font-weight: bold;
-          position: relative;
-          top: -5px;
-          right: 0;
-        }
-      }
     }
-
-
     @each $attr in $attrs {
-      *[#{$attr}]{
-        @if $outline == true{
-          outline: solid 1px lightgray;
-        }@else {
-          outline: none;
+        *[#{$attr}] {
+            @if $outline == true {
+                outline: solid 1px lightgray;
+            }
+            @else {
+                outline: none;
+            }
+
+            &:after {
+                content: ' ' + '[' + quote(#{$attr}) + ']';
+                font-size: 10px;
+                color: tomato;
+                font-weight: bold;
+                position: relative;
+                top: -5px;
+                right: 0;
+            }
         }
-        &:after{
-          content: ' ' + '[' + quote(#{$attr}) + ']';
-          font-size: 10px;
-          color: tomato;
-          font-weight: bold;
-          position: relative;
-          top: -5px;
-          right: 0;
-        }
-      }
     }
     @each $class in $classes {
-      .#{$class}{
-        @if $outline == true{
-          outline: solid 1px lightgray;
-        }@else {
-          outline: none;
-        }
-        &:after{
-          content: ' ' + '[' + quote(#{$class}) + ']';
-          font-size: 10px;
-          color: tomato;
-          font-weight: bold;
-          position: relative;
-          top: -5px;
-          right: 0;
-        }
-      }
-    }
+        .#{$class} {
+            @if $outline == true {
+                outline: solid 1px lightgray;
+            }
+            @else {
+                outline: none;
+            }
 
-    &:before{
-      content:'DEBUG Active';
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      z-index: 99999;
-      font-size: 10px;
-      font-family: Verdana, 'sans-serif';
-      color: tomato;
+            &:after {
+                content: ' ' + '[' + quote(#{$class}) + ']';
+                font-size: 10px;
+                color: tomato;
+                font-weight: bold;
+                position: relative;
+                top: -5px;
+                right: 0;
+            }
+        }
     }
+    $content: 'DEBUG >> ' '$tags: #{$tags}' ' | ' '$attrs: #{$attrs}' ' | ' '$classes: #{$classes}';
 
+    &:before {
+        content: $content;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 99999;
+        font-size: 10px;
+        font-family: Verdana, 'sans-serif';
+        color: tomato;
+        text-transform: uppercase;
+    }
 }
 
-body{
-  // @include debugger();
+body {
+    //@include debugger();
 }
