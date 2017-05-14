@@ -1,5 +1,5 @@
-Copyright (c) 2012-2017 Wout Fierens
-https://svgdotjs.github.io/
+Copyright (c) 2017 João Victor Santos
+https://github.com/jotavejv/css-sass-debugger
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
