@@ -17,7 +17,9 @@ $classes: (none);
         @if $outline == true{
           outline: solid 1px lightgray;
         }@else {
-          outline: none;
+          &:hover {
+            outline: solid 1px lightgray;
+          }
         }
 
         &:after{
@@ -25,9 +27,8 @@ $classes: (none);
           font-size: 10px;
           color: tomato;
           font-weight: bold;
-          position: relative;
-          top: -5px;
-          right: 0;
+          position: absolute;
+          z-index: 999999999;
         }
       }
     }
@@ -38,16 +39,17 @@ $classes: (none);
         @if $outline == true{
           outline: solid 1px lightgray;
         }@else {
-          outline: none;
+          &:hover {
+            outline: solid 1px lightgray;
+          }
         }
         &:after{
           content: ' ' + '[' + quote(#{$attr}) + ']';
           font-size: 10px;
           color: tomato;
           font-weight: bold;
-          position: relative;
-          top: -5px;
-          right: 0;
+          position: absolute;
+          z-index: 999999999;
         }
       }
     }
@@ -56,20 +58,21 @@ $classes: (none);
         @if $outline == true{
           outline: solid 1px lightgray;
         }@else {
-          outline: none;
+          &:hover {
+            outline: solid 1px lightgray;
+          }
         }
         &:after{
           content: ' ' + '[' + quote(#{$class}) + ']';
           font-size: 10px;
           color: tomato;
           font-weight: bold;
-          position: relative;
-          top: -5px;
-          right: 0;
+          position: absolute;
+          z-index: 999999999;
         }
       }
     }
-    
+
     $content: 'DEBUG >> ' '$tags: #{$tags}' ' | ' '$attrs: #{$attrs}' ' | ' '$classes: #{$classes}';
 
     &:before{
